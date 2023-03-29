@@ -40,6 +40,12 @@ public class Gallery {
          return amount;
      }
 
+     public void addArtwork(Artwork artwork){
+        this.artworks.add(artwork);
+     }
+    public int countArtworks(){
+        return this.artworks.size();
+    }
 // public int setStock( int amount){
     //return this.stock += amount; }
 

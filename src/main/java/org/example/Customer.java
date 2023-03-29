@@ -25,4 +25,9 @@ public class Customer {
     public void setWallet(double wallet) {
         this.wallet = wallet;
     }
+
+    public void removeMoney(double amount){
+        this.wallet -= Artwork.getPrice();
+    }
+    
 }

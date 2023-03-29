@@ -7,10 +7,10 @@ public class Artwork {
     private double price;
 
 
-    public Artwork(String title, String artist){
+    public Artwork(String title, String artist, double price){
         this.title = title;
         this.artist =artist;
-        this.price = 0;
+        this.price = price;
     }
 
 //    getter
