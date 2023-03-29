@@ -7,7 +7,7 @@ public class Artwork {
     private double price;
 
 
-    public Artwork(String title, String artist, double price){
+    public Artwork(String title, String artist){
         this.title = title;
         this.artist =artist;
         this.price = 0;

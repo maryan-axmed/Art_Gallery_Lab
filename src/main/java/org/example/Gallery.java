@@ -8,16 +8,14 @@ public class Gallery {
 
     private double till;
 
-    private int stock;
 
-    private ArrayList<Artwork> artwork;
+    private ArrayList<Artwork> artworks;
 
 
-    public Gallery(String name, double till, int stock, Artwork artwork){
+    public Gallery(String name, double till){
         this.name = name;
         this.till = till;
-        this.stock = stock;
-        this.artwork = new ArrayList<>();
+        this.artworks = new ArrayList<>();
 
     }
 
@@ -29,17 +27,10 @@ public class Gallery {
     return this.till;
     }
 
-    public int getStock(){
-    return this.stock;
+    public ArrayList<Artwork> getArtworks(){
+    return this.artworks;
     }
 
-    public ArrayList<Artwork> getArtwork(){
-    return this.artwork;
-    }
-
-    public void setStock(int quantityStock) {
-        this.stock -= quantityStock;
-    }
 // public int setStock( int amount){
     //return this.stock += amount; }
 
