@@ -12,14 +12,14 @@ public class Gallery {
     private ArrayList<Artwork> artworks;
 
 
-    public Gallery(String name, double till){
-        this.name = name;
+    public Gallery(String galleryName, double till){
+        this.name = galleryName;
         this.till = till;
         this.artworks = new ArrayList<>();
 
     }
 
-    public String getName(){
+    public String getgalleryName(){
     return this.name;
      }
 
@@ -30,6 +30,15 @@ public class Gallery {
     public ArrayList<Artwork> getArtworks(){
     return this.artworks;
     }
+
+    public void setTill(double till) {
+        this.till = till;
+    }
+
+    public double receive(double amount){
+            this.till += amount; // this.till = this.till + amount
+         return amount;
+     }
 
 // public int setStock( int amount){
     //return this.stock += amount; }
